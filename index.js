@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 5000
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors({
-  origin: "https://chat-botfrontend.vercel.app/", 
+  origin: "https://chat-botfrontend.vercel.app", 
   credentials: true
 }))
 
