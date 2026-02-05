@@ -11,8 +11,8 @@ import cors from "cors"
 
 // importing
 import connectDB from './db/db.js'
-import userRoutes from '../backend/routes/userRoutes.js'
-import chatRoutes from "../backend/routes/chatRoutes.js"
+import userRoutes from './routes/userRoutes.js'
+import chatRoutes from "./routes/chatRoutes.js"
 
 
 
