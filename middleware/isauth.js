@@ -10,7 +10,7 @@ export const isAuth = async (req, res, next) => {
       return res.status(401).json({ message: "Please login first" })
     }
 
-    const token = authHeader.split(" ")[1]
+    const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : null
 
     const decoded = jwt.verify(token, process.env.jwt_key)
     // console.log("DECODED:", decoded)
